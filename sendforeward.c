@@ -71,14 +71,14 @@ int main(){
 	int64_t time_start;
 	int64_t time_end; 
 	for(int i=0;i<num_packets*950;i++){
-		if(i==0)
-			time_start = nano_count();
 		if ( (recvlen = recvfrom(s, buf, buf_size, 0, (struct sockaddr *)&remaddr, &addrlen) > 0)){
 			if (sendto(s, buf, recvlen, 0, (struct sockaddr *)&servaddr, sizeof(servaddr)) < 0){
 				cout<<"sendto failed"<<endl;
 				return 0;
 			}
 		}
+		if(i==0)
+			time_start = nano_count();
 		if(i%10000 == 0){
 			time_end = nano_count();
 			cout<<"number of packets recived and forewarded "<< i <<endl;
