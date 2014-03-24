@@ -68,7 +68,7 @@ int main(){
 	}
 	memcpy((void *)&servaddr.sin_addr, hp->h_addr_list[0], hp->h_length);
 	
-	int64_t time_start = nano_count();
+	int64_t time_start;
 	int64_t time_end; 
 	for(int i=0;i<num_packets*950;i++){
 		if(i==0)

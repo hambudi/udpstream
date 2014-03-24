@@ -48,7 +48,7 @@ int main(){
 		return 0;
 	}
 	
-	int64_t time_start = nano_count();
+	int64_t time_start;
 	for(int i=0;;i++){
 		if(i==0)
 			time_start = nano_count();
