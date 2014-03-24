@@ -23,7 +23,7 @@ int main(){
 
 	char* host_addr = "pc481.emulab.net";
 	int host_port = 54312;
-	int num_packets = 1000;
+	int num_packets = 10000;
 
 	int s;
 

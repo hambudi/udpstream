@@ -53,7 +53,7 @@ int main(){
 		if(i==0)
 			time_start = nano_count();
 		recvfrom(s, buf, buf_size, 0, (struct sockaddr *)&remaddr, &addrlen);
-		if(i%1000 == 0){
+		if(i%10000 == 0){
 			int64_t time_end = nano_count();
 			cout<<"number of packets recived and forewarded "<< i <<endl;
 			cout<<"this took "<<time_end-time_start<<" nanoseconds"<<endl;

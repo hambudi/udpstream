@@ -23,7 +23,7 @@ int main(){
 
 	char* host_addr = "pc477.emulab.net";
 	int host_port = 54312;
-	int num_packets = 1000;
+	int num_packets = 10000;
 
 	int my_port = 54312;
 
@@ -79,7 +79,7 @@ int main(){
 				return 0;
 			}
 		}
-		if(i%1000 == 0){
+		if(i%10000 == 0){
 			time_end = nano_count();
 			cout<<"number of packets recived and forewarded "<< i <<endl;
 			cout<<"this took "<<time_end-time_start<<" nanoseconds"<<endl;
