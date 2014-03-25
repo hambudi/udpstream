@@ -19,7 +19,7 @@ int64_t nano_count()
         cout<<"clock_gettime failed"<<endl;
     return t.tv_sec * 1000000000 + t.tv_nsec;
 }
-int main(int argc char *argv ){
+int main(int argc, char *argv ){
 
 	int my_port = atoi(argv[0]);
 

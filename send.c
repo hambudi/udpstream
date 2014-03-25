@@ -20,7 +20,7 @@ int64_t nano_count()
     return t.tv_sec * 1000000000 + t.tv_nsec;
 }
 
-int main(int argc char *argv ){
+int main(int argc, char *argv ){
 
 	char* host_addr = argv[2];
 	int host_port = atoi(argv[0]);
