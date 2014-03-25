@@ -7,6 +7,7 @@
 #include <netdb.h>
 #include <time.h>
 #include <stdint.h>
+#include <stdlib.h>
 using namespace std;
 
 int64_t nano_count()
@@ -19,11 +20,11 @@ int64_t nano_count()
     return t.tv_sec * 1000000000 + t.tv_nsec;
 }
 
-int main(){
+int main(int argc char *argv ){
 
-	char* host_addr = "pc481.emulab.net";
-	int host_port = 54312;
-	int num_packets = 100000;
+	char* host_addr = argv[2];
+	int host_port = atoi(argv[0]);
+	int num_packets = atoi(argv[1]);
 
 	int s;
 

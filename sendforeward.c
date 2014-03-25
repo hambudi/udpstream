@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <netdb.h>
 #include <time.h>
@@ -21,11 +22,11 @@ int64_t nano_count()
 
 int main(){
 
-	char* host_addr = "pc477.emulab.net";
-	int host_port = 54312;
-	int num_packets = 100000;
+	char* host_addr = argv[1];
+	int host_port = atoi(argv[0]);
+	int num_packets = atoi(argv[3]);
 
-	int my_port = 54312;
+	int my_port = atoi(argv[2);
 
 	int recvlen;
 	char* buf[10];

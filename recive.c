@@ -7,6 +7,7 @@
 #include <netdb.h>
 #include <time.h>
 #include <stdint.h>
+#include <stdlib.h>
 using namespace std;
 
 int64_t nano_count()
@@ -18,10 +19,9 @@ int64_t nano_count()
         cout<<"clock_gettime failed"<<endl;
     return t.tv_sec * 1000000000 + t.tv_nsec;
 }
+int main(int argc char *argv ){
 
-int main(){
-
-	int my_port = 54312;
+	int my_port = atoi(argv[0]);
 
 	int recvlen;
 	char* buf[10];
