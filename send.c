@@ -25,7 +25,7 @@ int main(int argc, char **argv ){
 	char* host_addr = argv[2];
 	int host_port = atoi(argv[0]);
 	int num_packets = atoi(argv[1]);
-
+	cout<<host_port<<" port "<<host_addr<<" addr "<<num_packets<<" packets"<<endl;
 	int s;
 
 	if( (s = socket(AF_INET, SOCK_DGRAM, 0)) <0){
