@@ -26,7 +26,7 @@ int main(int argc, char **argv ){
 	int host_port = atoi(argv[0]);
 	int num_packets = atoi(argv[3]);
 
-	int my_port = atoi(argv[2));
+	int my_port = atoi(argv[2]);
 
 	int recvlen;
 	char* buf[10];
