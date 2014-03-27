@@ -82,10 +82,10 @@ int main(int argc, char **argv ){
 		}else{
 			recvfrom(s, buf, buf_size, 0, (struct sockaddr *)&remaddr, &addrlen);
 			time_end = nano_count();
-			cout<<"this took "<<time_end-time_start<<" nanoseconds"<<endl;
-			cout<<(time_end-time_start)/1000<<" microseconds"<<endl;
-			cout<<(time_end-time_start)/1000000<<" milliseconds"<<endl;
-			cout<<(time_end-time_start)/1000000000<<" seconds"<<endl;
+			// cout<<"this took "<<time_end-time_start<<" nanoseconds"<<endl;
+			cout<<(time_end-time_start)/1000<<endl;
+			// cout<<(time_end-time_start)/1000000<<" milliseconds"<<endl;
+			// cout<<(time_end-time_start)/1000000000<<" seconds"<<endl;
 		}
 	}
 }
