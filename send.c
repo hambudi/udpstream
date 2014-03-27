@@ -22,9 +22,9 @@ int64_t nano_count()
 
 int main(int argc, char **argv ){
 
-	char* host_addr = argv[2];
-	int host_port = atoi(argv[0]);
-	int num_packets = atoi(argv[1]);
+	char* host_addr = argv[3];
+	int host_port = atoi(argv[1]);
+	int num_packets = atoi(argv[2]);
 	cout<<host_port<<" port "<<host_addr<<" addr "<<num_packets<<" packets"<<endl;
 	int s;
 

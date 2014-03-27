@@ -22,11 +22,11 @@ int64_t nano_count()
 
 int main(int argc, char **argv ){
 
-	char* host_addr = argv[1];
-	int host_port = atoi(argv[0]);
-	int num_packets = atoi(argv[3]);
+	char* host_addr = argv[2];
+	int host_port = atoi(argv[1]);
+	int num_packets = atoi(argv[4]);
 
-	int my_port = atoi(argv[2]);
+	int my_port = atoi(argv[3]);
 
 	int recvlen;
 	char* buf[10];

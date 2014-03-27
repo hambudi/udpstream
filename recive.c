@@ -21,7 +21,7 @@ int64_t nano_count()
 }
 int main(int argc, char **argv ){
 
-	int my_port = atoi(argv[0]);
+	int my_port = atoi(argv[1]);
 
 	int recvlen;
 	char* buf[10];
