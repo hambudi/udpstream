@@ -71,7 +71,7 @@ int main(int argc, char **argv ){
 	
 	int64_t time_start;
 	int64_t time_end; 
-	for(int i=0;i<num_packets*950;i++){
+	for(int i=0;;i++){
 		if ( (recvlen = recvfrom(s, buf, buf_size, 0, (struct sockaddr *)&remaddr, &addrlen) > 0)){
 			if (sendto(s, buf, recvlen, 0, (struct sockaddr *)&servaddr, sizeof(servaddr)) < 0){
 				cout<<"sendto failed"<<endl;

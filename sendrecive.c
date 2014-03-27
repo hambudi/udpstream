@@ -72,7 +72,7 @@ int main(int argc, char **argv ){
 	int64_t time_start;
 	int64_t time_end; 
 
-	for(int i=0;i<num_packets*950;i++){
+	for(int i=0;;i++){
 
 		time_start = nano_count();
 
